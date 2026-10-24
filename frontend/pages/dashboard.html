@@ -6,7 +6,37 @@
     <link rel="stylesheet" href="../css/output.css">
     <title>Dashboard | FitTracker</title>
 </head>
-<body>
-    
+<body class="bg-gray-100 flex flex-col md:flex-row min-h-screen text-gray-900 font-sans">
+
+    <aside class="w-full md:w-64 bg-gray-900 flex flex-col justify-between md:h-screen md:sticky md:top-0">
+        <div class="p-6">
+            <h1 class="text-3xl font-bold text-orange-500 mb-8">FitTracker</h1>
+            
+            <nav class="flex flex-col gap-2">
+                <a href="dashboard.html" class="p-3 bg-gray-800 text-orange-500 font-bold rounded">Dashboard</a>
+                <a href="exercises.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Exercises</a>
+                <a href="add-workout.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Build Routine</a>
+                <a href="settings.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Settings</a>
+            </nav>
+        </div>
+        
+        <div class="p-6">
+            <a href="login.html" class="block w-full p-3 text-center text-white bg-red-600 hover:bg-red-700 rounded font-bold">Logout</a>
+        </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 w-full">
+        
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold">Dashboard</h2>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded font-bold">+ New Workout</button>
+        </div>
+
+        <div class="w-full h-64 bg-white border-2 border-gray-300 border-dashed flex items-center justify-center rounded">
+            <p class="text-gray-500">Charts go here</p>
+        </div>
+
+    </main>
+
 </body>
 </html>
