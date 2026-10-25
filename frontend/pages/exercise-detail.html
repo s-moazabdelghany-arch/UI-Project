@@ -6,7 +6,50 @@
     <link rel="stylesheet" href="../css/output.css">
     <title>Exercise Details | FitTracker</title>
 </head>
-<body>
-    
+<body class="bg-gray-100 flex flex-col md:flex-row min-h-screen text-gray-900 font-sans">
+
+    <aside class="w-full md:w-64 bg-gray-900 flex flex-col justify-between md:h-screen md:sticky md:top-0">
+        <div class="p-6">
+            <h1 class="text-3xl font-bold text-orange-500 mb-8">FitTracker</h1>
+            <nav class="flex flex-col gap-2">
+                <a href="dashboard.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Dashboard</a>
+                <a href="exercises.html" class="p-3 bg-gray-800 text-orange-500 font-bold rounded">Exercises</a>
+                <a href="add-workout.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Add Workout</a>
+                <a href="settings.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Settings</a>
+            </nav>
+        </div>
+        <div class="p-6">
+            <a href="login.html" class="block w-full p-3 text-center text-white bg-red-600 hover:bg-red-700 rounded font-bold">Logout</a>
+        </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-10 w-full max-w-4xl mx-auto">
+        <div class="mb-6">
+            <a href="exercises.html" class="text-orange-500 font-bold hover:underline">&larr; Back to Exercises</a>
+        </div>
+
+        <div class="bg-white border border-gray-300 rounded p-6 shadow-sm mb-6">
+            <h2 class="text-3xl font-bold mb-2">Barbell Bench Press</h2>
+            <p class="text-gray-600 mb-6">Primary Target: Chest & Triceps</p>
+            
+            <div class="border-t border-gray-200 pt-4">
+                <h3 class="font-bold text-lg mb-2">Instructions</h3>
+                <p class="text-gray-700 leading-relaxed">Lie on the flat bench with your eyes under the bar. Grip the bar slightly wider than shoulder-width. Unrack the bar, lower it slowly to your mid-chest, and press it back up to full extension.</p>
+            </div>
+        </div>
+
+        <div class="bg-white border border-gray-300 rounded p-6 shadow-sm">
+            <h3 class="font-bold text-lg mb-4">Personal Best History</h3>
+            <div class="flex justify-between p-3 bg-gray-50 rounded border border-gray-200 mb-2">
+                <span>Max Weight: 100 kg</span>
+                <span class="text-gray-500">October 15, 2026</span>
+            </div>
+            <div class="flex justify-between p-3 bg-gray-50 rounded border border-gray-200">
+                <span>Max Weight: 95 kg</span>
+                <span class="text-gray-500">September 28, 2026</span>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
