@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,97 @@
     <link rel="stylesheet" href="../css/output.css">
     <title>User Settings | FitTracker</title>
 </head>
-<body>
-    
+
+<body class="bg-gray-100 flex flex-col md:flex-row min-h-screen text-gray-900 font-sans">
+
+```
+<aside class="w-full md:w-64 bg-gray-900 flex flex-col justify-between md:h-screen md:sticky md:top-0">
+
+    <div class="p-6">
+        <h1 class="text-3xl font-bold text-orange-500 mb-8">FitTracker</h1>
+
+        <nav class="flex flex-col gap-2">
+            <a href="dashboard.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">
+                Dashboard
+            </a>
+
+            <a href="exercises.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">
+                Exercises
+            </a>
+
+            <a href="add-workout.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">
+                Add Workout
+            </a>
+
+            <a href="settings.html" class="p-3 bg-gray-800 text-orange-500 font-bold rounded">
+                Settings
+            </a>
+        </nav>
+    </div>
+
+    <div class="p-6">
+        <a href="login.html" class="block w-full p-3 text-center text-white bg-red-600 hover:bg-red-700 rounded font-bold">
+            Logout
+        </a>
+    </div>
+
+</aside>
+
+<main class="flex-1 p-6 md:p-10 w-full max-w-4xl mx-auto">
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold">Settings</h2>
+        <p class="text-gray-600 mt-1">Manage your account preferences.</p>
+    </div>
+
+    <form class="flex flex-col gap-6">
+
+        <div class="bg-white border border-gray-300 rounded p-6 shadow-sm">
+            <h3 class="text-xl font-bold mb-4">Profile Information</h3>
+
+            <div class="flex flex-col gap-4">
+
+                <div>
+                    <label for="full-name" class="block font-bold text-gray-700 mb-2">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        placeholder="Enter Name..."
+                        class="w-full border border-gray-300 p-3 rounded"
+                    >
+                </div>
+
+                <div>
+                    <label for="email" class="block font-bold text-gray-700 mb-2">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email..."
+                        class="w-full border border-gray-300 p-3 rounded"
+                    >
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex justify-end">
+            <button type="submit" class="bg-orange-500 text-white font-bold py-3 px-8 rounded hover:bg-orange-600 w-full md:w-auto">
+                Save Changes
+            </button>
+        </div>
+
+    </form>
+
+</main>
+```
+
 </body>
 </html>
