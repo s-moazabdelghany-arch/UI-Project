@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/output.css">
-    <title>Dashboard | FitTracker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - FitTracker</title>
+  <link rel="stylesheet" href="../css/output.css">
 </head>
 <body class="bg-gray-100 flex flex-col md:flex-row min-h-screen text-gray-900 font-sans">
 
-    <aside class="w-full md:w-64 bg-gray-900 flex flex-col justify-between md:h-screen md:sticky md:top-0">
-        <div class="p-6">
-            <h1 class="text-3xl font-bold text-orange-500 mb-8">FitTracker</h1>
-            
-            <nav class="flex flex-col gap-2">
-                <a href="dashboard.html" class="p-3 bg-gray-800 text-orange-500 font-bold rounded">Dashboard</a>
-                <a href="exercises.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Exercises</a>
-                <a href="add-workout.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Build Routine</a>
-                <a href="settings.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Settings</a>
-            </nav>
+  <aside class="w-full md:w-64 bg-gray-900 flex flex-col justify-between md:h-screen md:sticky md:top-0">
+    <div class="p-6">
+      <h1 class="text-3xl font-bold text-orange-500 mb-8">FitTracker</h1>
+      <nav class="flex flex-col gap-2">
+        <a href="dashboard.html" class="p-3 bg-gray-800 text-orange-500 font-bold rounded">Dashboard</a>
+        <a href="exercises.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Exercises</a>
+        <a href="add-workout.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Add Workout</a>
+        <a href="settings.html" class="p-3 text-gray-400 hover:text-white hover:bg-gray-800 rounded">Settings</a>
+      </nav>
+    </div>
+    <div class="p-6">
+      <a href="login.html" class="block w-full p-3 text-center text-white bg-red-600 hover:bg-red-700 rounded font-bold">Logout</a>
+    </div>
+  </aside>
+
+  <main class="flex-1 p-6 md:p-10 w-full space-y-6">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-2xl font-bold">Dashboard</h2>
+      <button class="bg-orange-500 text-white px-4 py-2 rounded font-bold hover:bg-orange-600">+ New Workout</button>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-300 w-full">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-lg font-bold text-gray-800">Weekly Workout Duration</h3>
+      </div>
+      
+      <div class="flex items-end h-48 gap-2 sm:gap-4 mt-4 border-b border-gray-200 pb-2 relative">
+        <div class="absolute inset-0 flex flex-col justify-between pointer-events-none">
+          <div class="w-full border-t border-gray-100 h-0"></div>
+          <div class="w-full border-t border-gray-100 h-0"></div>
+          <div class="w-full border-t border-gray-100 h-0"></div>
+          <div class="w-full border-t border-gray-100 h-0"></div>
+        </div>
+
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-12 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Mon</span>
         </div>
         
-        <div class="p-6">
-            <a href="login.html" class="block w-full p-3 text-center text-white bg-red-600 hover:bg-red-700 rounded font-bold">Logout</a>
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-24 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Tue</span>
         </div>
-    </aside>
-
-    <main class="flex-1 p-6 md:p-10 w-full">
         
-        <div class="flex justify-between items-center mb-8">
-            <h2 class="text-2xl font-bold">Dashboard</h2>
-            <button class="bg-orange-500 text-white px-4 py-2 rounded font-bold">+ New Workout</button>
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-16 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Wed</span>
         </div>
-
-        <div class="w-full h-64 bg-white border-2 border-gray-300 border-dashed flex items-center justify-center rounded">
-            <p class="text-gray-500">Charts go here</p>
+        
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-32 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Thu</span>
         </div>
-
-    </main>
+        
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-20 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Fri</span>
+        </div>
+        
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-500 rounded-t-md h-40 transition-all group-hover:bg-orange-600 shadow-md"></div>
+          <span class="text-xs text-gray-800 mt-3 font-bold">Sat</span>
+        </div>
+        
+        <div class="flex flex-col items-center flex-1 z-10 group">
+          <div class="w-full bg-orange-400 rounded-t-md h-10 transition-all group-hover:bg-orange-600"></div>
+          <span class="text-xs text-gray-500 mt-3 font-medium">Sun</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
